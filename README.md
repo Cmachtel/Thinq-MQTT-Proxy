@@ -19,6 +19,11 @@ I have implemented a thin layer which is providing necessary infrastructure for 
 
 1. Java 8
 1. Apache Maven 3.6.3
+## Install
+```
+git clone https://github.com/mgwoj/Thinq-MQTT-Proxy
+cd Thinq-MQTT-Proxy/
+```
 
 ## Building
 
@@ -28,8 +33,10 @@ mvn clean package
 
 ## First run
 
-Copy `state-example.json` to `state.json` and correct your language, region and local MQTT server settings.
-
+Copy `state-example.json` to `state.json` and correct your language, region and local MQTT server settings. 
+```
+cp state-example.json state.json
+```
 ```
 java -jar ./target/thinq-mqtt-proxy.jar init
 ```
